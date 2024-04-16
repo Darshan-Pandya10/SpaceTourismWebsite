@@ -1,0 +1,30 @@
+.navlink{
+  font-family: "Barlow Condensed", sans-serif;
+  border-bottom: 4px solid transparent;
+}
+
+.header .active{
+  border-bottom: 4px solid white;
+}
+
+.header .navlink .active:hover {
+  border-bottom: 4px solid white;
+}
+
+.header .navlink:hover {
+  border-bottom: 4px solid rgb(129, 129, 129);
+}
+
+.paragraph h2{
+      font-family: "Barlow Condensed", sans-serif;
+}
+
+.paragraph span{
+      font-family: "Bellefair", serif;
+}
+
+.explore-btn {
+  font-family: "Bellefair", serif;
+}
+
+

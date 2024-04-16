@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .navlink {
+        @apply block w-fit px-4 mx-auto my-[2rem] py-4 sm:px-0 sm:inline-block z-50 sm:m-0 sm:mx-3 lg:mx-4 sm:py-6 text-white tracking-widest text-base lg:text-xl uppercase
+    }   
+}
