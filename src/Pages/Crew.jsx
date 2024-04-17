@@ -29,7 +29,7 @@ const Crew = () => {
 
           <div className="btn-box mx-auto w-fit mt-8 mb-8 lg:mt-28 lg:ml-12 lg:absolute lg:bottom-12 lg:left-8">
             {crew.map((member, index) => {
-              return <button key={index} onClick={() => GetCrewMemberName(member.name)} className={'inline text-white p-2 py-4 mx-2'}> {crewMemberName === member.name ? <FaCircle /> : <FaRegCircle />}</button>;
+              return <button key={index} onClick={() => GetCrewMemberName(member.name)} className={'inline hover:bg-gray-600 rounded-[50%] text-white w-4 h-4 m-4'}> {crewMemberName === member.name ? <FaCircle /> : <FaRegCircle />}</button>;
             })}
           </div>
 

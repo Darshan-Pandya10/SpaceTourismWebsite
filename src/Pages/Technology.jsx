@@ -52,7 +52,7 @@ const Technology = () => {
           <div className='flex flex-col items-center justify-center lg:flex-row lg:item-center lg:justify-center'>
             <div className="btn-box mx-auto w-fit mt-8 mb-8 flex items-center justify-center lg:flex-col lg:item-center lg:justify-center lg:mx-12">
               {technology.map((tech, index) => {
-                return <button key={index} onClick={() => GetTechnologyName(tech.name)} className={`inline w-16 h-16 rounded-[50%] font-semibold ${technologyName === tech.name ? 'text-black bg-white' : 'bg-transparent text-white border-2 border-solid border-white'} m-4`}>
+                return <button key={index} onClick={() => GetTechnologyName(tech.name)} className={`inline w-16 h-16 rounded-[50%] font-semibold ${technologyName === tech.name ? 'text-black bg-white hover:bg-gray-300' : 'bg-transparent text-white border-2 border-solid border-white hover:border-gray-300'}  m-4`}>
                   {index + 1}
                 </button>;
               })}
