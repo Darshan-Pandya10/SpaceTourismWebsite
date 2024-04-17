@@ -1,12 +1,22 @@
-.navlink{
-  font-family: "Barlow Condensed", sans-serif;
-  border-bottom: 4px solid transparent;
+:root {
+  --primary-font: "Barlow Condensed", sans-serif;
+  --secondary-font: "Bellefair", serif;
 }
 
-.header .active{
-  border-bottom: 4px solid white;
+.navlink,
+.paragraph h2,
+.destination-tags,
+.title,
+.member-bio,
+.tech-description,
+.btn-box .btn,
+.description,
+.static-text,
+.intro {
+  font-family: var(--primary-font);
 }
 
+.header .active,
 .header .navlink .active:hover {
   border-bottom: 4px solid white;
 }
@@ -15,40 +25,12 @@
   border-bottom: 4px solid rgb(129, 129, 129);
 }
 
-.paragraph h2{
-      font-family: "Barlow Condensed", sans-serif;
-}
-
-.paragraph span{
-      font-family: "Bellefair", serif;
-}
-
-.explore-btn {
-  font-family: "Bellefair", serif;
-}
-
-.destination-tags{
-      font-family: "Barlow Condensed", sans-serif;
-}
-
-.value{
-    font-family: "Bellefair", serif;
-}
-
-.destination-name{
-      font-family: "Bellefair", serif;
-}
-
-.title{
-              font-family: "Bellefair", serif;
-
-    }
-
-.member-role , .member-name{
-                font-family: "Bellefair", serif;
-
-}
-
-.member-bio{
-      font-family: "Barlow Condensed", sans-serif;
+.paragraph span,
+.explore-btn,
+.value,
+.destination-name,
+.member-role,
+.member-name,
+.tech-name {
+  font-family: var(--secondary-font);
 }

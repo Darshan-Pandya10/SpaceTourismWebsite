@@ -11,7 +11,7 @@ const Home = () => {
                 <div className="paragraph w-[85vw] m-2 sm:w-fit text-center lg:text-left">
                     <h2 className='text-base sm:text-xl md:text-2xl uppercase text-slate-200 tracking-widest'> So, you want to travel to</h2>
                         <span className='text-[4rem] md:text-[6rem] inline-block px-2 my-8 md:my-8 tracking-wider'>SPACE</span>
-                    <p className='leading-8 text-slate-200 sm:w-[26rem]'>Let’s face it; if you want to go to space, you might as well  genuinely go to outer space and not hover kind of on the   edge of it. Well sit back, and relax because we’ll give you   a truly out of this world experience!</p>
+                    <p className='intro text-xl tracking-wider leading-8 text-slate-200 sm:w-[26rem]'>Let’s face it; if you want to go to space, you might as well  genuinely go to outer space and not hover kind of on the   edge of it. Well sit back, and relax because we’ll give you   a truly out of this world experience!</p>
                 </div>
 
                 <button className='explore-btn w-[13rem] h-[13rem] rounded-[50%] bg-white text-black text-3xl tracking-widest'>EXPLORE</button>

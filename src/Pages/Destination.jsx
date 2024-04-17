@@ -30,14 +30,14 @@ const Destination = () => {
               <div className="btn-box mx-auto my-16 ">
                 {destinations.map((destination , index) => {
                 return <button key={index} onClick={(e) => GetDestinationName(e)} 
-                className={`${destinationName === destination.name ? 'border-b-4 border-solid border-white' : ''}inline  text-white p-2 py-4 mx-2`} name={destination.name}> 
+                className={`${destinationName === destination.name ? 'border-b-4 border-solid border-white' : ''}inline btn text-2xl  text-white p-2 py-4 mx-2`} name={destination.name}> 
                 {destination.name}
                 </button>
               })}
               </div>
               
               <h1 className='destination-name font-bold text-[2.5rem] uppercase tracking-widest m-4'>{name}</h1>
-              <p className='text-base font-normal leading-7 tracking-wide pb-8'>{description}</p>
+              <p className='description leading-8 tracking-wider text-xl pb-8'>{description}</p>
               <div className="horizontal-line mx-auto w-full h-[1px] bg-gray-500 mb-8"></div>
 
 
