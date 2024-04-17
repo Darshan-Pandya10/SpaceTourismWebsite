@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <main className="w-screen min-h-screen bg-[url('../src/assets/home/background-home-mobile.jpg')] sm:bg-[url('../src/assets/home/background-home-tablet.jpg')] md:bg-[url('../src/assets/home/background-home-desktop.jpg')] bg-cover">
+    <main className="w-screen min-h-screen bg-[url('../src/assets/home/background-home-mobile.jpg')] sm:bg-[url('../src/assets/home/background-home-tablet.jpg')] md:bg-[url('../src/assets/home/background-home-desktop.jpg')] bg-origin-content bg-center bg-cover">
 
         <div className="page-content min-h-screen pt-40 pb-8 px-8 text-white">
 

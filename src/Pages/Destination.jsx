@@ -17,7 +17,7 @@ const Destination = () => {
   }
 
   return (
-      <main className="w-screen min-h-screen bg-[url('../src/assets/destination/background-destination-mobile.jpg')] sm:bg-[url('../src/assets/destination/background-destination-tablet.jpg')] md:bg-[url('../src/assets/destination/background-destination-desktop.jpg')] bg-cover">
+      <main className="w-screen min-h-screen bg-[url('../src/assets/destination/background-destination-mobile.jpg')] sm:bg-[url('../src/assets/destination/background-destination-tablet.jpg')] md:bg-[url('../src/assets/destination/background-destination-desktop.jpg')] bg-origin-content bg-center bg-cover">
 
         <div className="page-content min-h-screen pt-40 px-4 text-white pb-28">
 

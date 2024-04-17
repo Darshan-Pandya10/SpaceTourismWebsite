@@ -25,7 +25,7 @@ const Crew = () => {
 
 
   return (
-     <main className="w-screen min-h-screen bg-[url('../src/assets/crew/background-crew-mobile.jpg')] sm:bg-[url('../src/assets/crew/background-crew-tablet.jpg')] md:bg-[url('../src/assets/crew/background-crew-desktop.jpg')] bg-cover">
+     <main className="w-screen min-h-screen bg-[url('../src/assets/crew/background-crew-mobile.jpg')] sm:bg-[url('../src/assets/crew/background-crew-tablet.jpg')] md:bg-[url('../src/assets/crew/background-crew-desktop.jpg')] bg-origin-content bg-center bg-cover">
         <div className="page-content min-h-fit pt-40 px-8 text-white ">
         <header className='title tracking-widest font-semibold text-xl md:text-2xl'><span className='text-gray-500'>02</span> MEET YOUR CREW</header>
 

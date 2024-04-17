@@ -59,7 +59,7 @@ const showImage =
 
 
   return (
-      <main className="w-screen min-h-screen bg-[url('../src/assets/technology/background-technology-mobile.jpg')] sm:bg-[url('../src/assets/technology/background-technology-tablet.jpg')] md:bg-[url('../src/assets/technology/background-technology-desktop.jpg')] bg-cover">
+      <main className="w-screen min-h-screen bg-[url('../src/assets/technology/background-technology-mobile.jpg')] sm:bg-[url('../src/assets/technology/background-technology-tablet.jpg')] md:bg-[url('../src/assets/technology/background-technology-desktop.jpg')] bg-cover bg-origin-content bg-center ">
 
 
         <div className="page-content min-h-screen pt-40 text-white">
