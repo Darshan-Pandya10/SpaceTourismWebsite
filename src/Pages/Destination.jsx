@@ -27,7 +27,7 @@ const Destination = () => {
           <div className="details w-[90vw] sm:w-[60vw] md:w-[30rem] flex-col text-center justify-center items-center md:text-left pb-18">
             <div className="btn-box mx-auto my-16 ">
               {destinations.map((destination, index) => {
-                return <button key={index} onClick={(e) => GetDestinationName(e)} className={`border-white border-b-4 border-solid ${destinationName === destination.name ? 'border-white '  : 'border-transparent'} hover:border-gray-500 inline btn text-2xl text-white p-2 py-4 mx-2`} name={destination.name}>
+                return <button key={index} onClick={(e) => GetDestinationName(e)} className={`border-b-4 border-solid ${destinationName === destination.name ? 'border-white '  : 'border-transparent'} hover:border-gray-500 inline btn text-2xl text-white p-2 py-4 mx-2`} name={destination.name}>
                   {destination.name}
                 </button>;
               })}
