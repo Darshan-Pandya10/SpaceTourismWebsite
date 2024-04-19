@@ -29,7 +29,7 @@ const Header = () => {
       <div className="hidden lg:block streight-line lg:w-[50vw] bg-gray-600 h-[0.1rem]"></div>
 
       <nav
-        className={`w-[90vw] backdrop-blur-lg sm:w-[75vw] md:w-[70vw] mb-4 mt-auto min-h-[125vh] ${
+        className={`w-[90vw] backdrop-blur-lg sm:w-[75vw] md:w-[70vw] mb-4 mt-auto min-h-screen ${
           isNavbarVisible ? '' : 'hidden'
         } sm:flex sm:justify-center sm:min-h-fit sm:items-center`}
       >
