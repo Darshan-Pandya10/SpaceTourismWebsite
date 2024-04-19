@@ -10,7 +10,15 @@ const Crew = () => {
   const {loading , crew} = useFetchData()
   const [crewMemberName, setCrewMemberName] = useState('Mark Shuttleworth');
   console.log(crew)
-  const showCrewMember = crew ? crew.filter((member) => member.name === crewMemberName) : []
+  const showCrewMember = crew ? crew.filter((member) => member.name === crewMemberName) : [{
+      "name": "Mark Shuttleworth",
+      "images": {
+        "png": "./assets/crew/image-mark-shuttleworth.png",
+        "webp": "./assets/crew/image-mark-shuttleworth.webp"
+      },
+      "role": "Mission Specialist",
+      "bio": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
+    }]
   const GetCrewMemberName = (memberName) => {
     setCrewMemberName(memberName);
   };

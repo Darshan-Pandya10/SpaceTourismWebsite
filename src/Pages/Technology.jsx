@@ -19,7 +19,6 @@ const Technology = () => {
   }, []); // Empty dependency array to run effect only once after mount
 
   const [technologyName, setTechnologyName] = useState('Launch vehicle');
-  const showTechnology = technology ? technology.filter((tech) => tech.name === technologyName) : []
 
   const GetTechnologyName = (technologyName) => {
     setTechnologyName(technologyName);
@@ -33,7 +32,14 @@ const Technology = () => {
       </section>
     </article>
   }
-
+    const showTechnology = technology ? technology.filter((tech) => tech.name === technologyName) : [{
+      "name": "Launch vehicle",
+      "images": {
+        "portrait": "./assets/technology/image-launch-vehicle-portrait.jpg",
+        "landscape": "./assets/technology/image-launch-vehicle-landscape.jpg"
+      },
+      "description": "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"
+    }]
     const { name, description , imgs } = showTechnology[0];
 
     const showImage =
