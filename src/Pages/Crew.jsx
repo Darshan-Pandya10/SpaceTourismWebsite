@@ -9,6 +9,7 @@ const Crew = () => {
 
   const {loading , crew} = useFetchData()
   const [crewMemberName, setCrewMemberName] = useState('Mark Shuttleworth');
+  console.log(crew)
   const showCrewMember = crew ? crew.filter((member) => member.name === crewMemberName) : []
   const GetCrewMemberName = (memberName) => {
     setCrewMemberName(memberName);
