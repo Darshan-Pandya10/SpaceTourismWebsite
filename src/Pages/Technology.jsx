@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { technology } from '../Data/technologyDb';
-import tech1landscape from '../assets/technology/image-launch-vehicle-landscape.jpg';
-import tech2landscape from '../assets/technology/image-spaceport-landscape.jpg';
-import tech3landscape from '../assets/technology/image-space-capsule-landscape.jpg';
-
-import tech1portrait from '../assets/technology/image-launch-vehicle-portrait.jpg';
-import tech2portrait from '../assets/technology/image-spaceport-portrait.jpg';
-import tech3portrait from '../assets/technology/image-space-capsule-portrait.jpg';
+import { useFetchData } from '../Data/FetchData';
 
 const Technology = () => {
   const [width, setWidth] = useState(window.innerWidth);
+  const {loading , technology} = useFetchData()
+  console.log(technology)
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,22 +19,33 @@ const Technology = () => {
   }, []); // Empty dependency array to run effect only once after mount
 
   const [technologyName, setTechnologyName] = useState('Launch vehicle');
-  const showTechnology = technology.filter((tech) => tech.name === technologyName);
-  const { name, description } = showTechnology[0];
-
-  const showImage =
-    (technologyName === 'Launch vehicle' && width > 768) ? tech1portrait :
-    (technologyName === 'Spaceport' && width > 768) ? tech2portrait :
-    (technologyName === 'Space capsule' && width > 768) ? tech3portrait :
-    (width > 768) ? tech1landscape :
-    (width <= 768 && technologyName === 'Launch vehicle') ? tech1landscape :
-    (width <= 768 && technologyName === 'Spaceport') ? tech2landscape :
-    (width <= 768 && technologyName === 'Space capsule') ? tech3landscape :
-    tech1landscape;
+  const showTechnology = technology ? technology.filter((tech) => tech.name === technologyName) : []
 
   const GetTechnologyName = (technologyName) => {
     setTechnologyName(technologyName);
   };
+
+    if(loading){
+      return <article className="w-screen min-h-screen bg-[url('../src/assets/technology/background-technology-mobile.jpg')] sm:bg-[url('../src/assets/technology/background-technology-tablet.jpg')] md:bg-[url('../src/assets/technology/background-technology-desktop.jpg')] bg-cover bg-origin-content bg-center ">
+
+      <section className="page-content min-h-screen pt-40 px-4 text-white pb-28">
+      <div className="loader"></div>
+      </section>
+    </article>
+  }
+
+    const { name, description , imgs } = showTechnology[0];
+
+    const showImage =
+    (technologyName === 'Launch vehicle' && width > 768) ? imgs[1] :
+    (technologyName === 'Spaceport' && width > 768) ? imgs[1] :
+    (technologyName === 'Space capsule' && width > 768) ? imgs[1] :
+    (width > 768) ? imgs[0] :
+    (width <= 768 && technologyName === 'Launch vehicle') ? imgs[0] :
+    (width <= 768 && technologyName === 'Spaceport') ? imgs[0] :
+    (width <= 768 && technologyName === 'Space capsule') ? imgs[0] :
+    imgs[0];
+
 
   return (
     <article className="w-screen min-h-screen bg-[url('../src/assets/technology/background-technology-mobile.jpg')] sm:bg-[url('../src/assets/technology/background-technology-tablet.jpg')] md:bg-[url('../src/assets/technology/background-technology-desktop.jpg')] bg-cover bg-origin-content bg-center ">
