@@ -37,7 +37,7 @@ function App() {
   ])
 
   return (
-    <main className='app min-w-screen min-h-screen'>
+    <main className='app min-w-screen min-h-screen overflow-hidden'>
       <RouterProvider router={router} />
     </main>
   )
